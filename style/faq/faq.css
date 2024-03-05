@@ -1,0 +1,99 @@
+.faq-bg {
+  grid-row: 3;
+  grid-column: 2/4;
+}
+
+.faq-descricao {
+  grid-column: 2/4;
+}
+
+.faq-descricao {
+  position: relative;
+}
+
+.faq-descricao dt {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #E54;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.faq-descricao dt::before {
+  content: '';
+  display: inline-block;
+  padding: 5px 12px;
+  background-color: #fb5;
+  margin-right: 10px;
+}
+
+.js [data-anime="accordion"] dt::after {
+  content: '⬎';
+  margin-left: 10px;
+}
+
+.js[data-anime="accordion"] dt.on::after {
+  content: '⬏';
+}
+
+
+
+.faq-descricao dd {
+  margin-left: 23px;
+  margin-bottom: 5px;
+  font-size: 1.125rem;
+  padding: 10px;
+  display: none;
+  font-family: Helvetica, Arial;
+  color: #111111;
+}
+
+.faq-descricao dd.on {
+  display: block !important;
+  animation: slideDown .5s forwards;
+}
+
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+
+  to {
+    opacity: 1;
+    max-height: 400px;
+  }
+}
+
+
+
+
+@media (max-width: 700px) {
+
+  .faq-bg {
+    grid-column: 1;
+    grid-row: 3;
+    width: 100vw;
+    grid-column: 1;
+    grid-template-columns: 1fr;
+  }
+
+  .faq-bg h2 {
+    font-size: 4rem;
+  }
+
+  .faq-descricao {
+    grid-column: 1;
+  }
+
+  .faq-descricao dt {
+    font-size: 1.2rem;
+  }
+
+  .faq-descricao dd {
+    font-size: 1.1rem;
+    padding-bottom: 0px;
+  }
+}

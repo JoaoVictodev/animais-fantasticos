@@ -1,0 +1,23 @@
+{
+    "editor.fontSize": 14,
+    "editor.tabSize": 2,
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.wordWrap": "on",
+    "editor.minimap.renderCharacters": false,
+    "telemetry.enableTelemetry": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "breadcrumbs.filePath": "off",
+    "outline.icons": false,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 250,
+    "editor.minimap.enabled": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "editor.formatOnSave": true,
+    "html.format.wrapAttributes": "auto",
+    "html.format.wrapLineLength": 0,
+    "html.autoClosingTags": false,
+    "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+    }
+  }

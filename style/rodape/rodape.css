@@ -1,0 +1,24 @@
+.rodape {
+  background: #FB5;
+  grid-column: 3/5;
+  box-sizing: border-box;
+  padding: 1.2rem;
+  margin: 2rem 0
+}
+
+.rodape p {
+  font-size: 1.1rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+
+  .rodape {
+    grid-column: 1;
+    grid-row: 6;
+    grid-row: 6;
+    width: 100vw;
+    margin: 0;
+  }
+}

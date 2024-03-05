@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* html {
+  scroll-behavior: smooth;
+} */
+
+.bg-geral {
+  display: grid;
+  grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
+  background: #faf6ed;
+  box-sizing: border-box;
+
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+
+.js [data-tab="content"] {
+  display: none;
+}
+
+.js .ativo {
+  display: block !important;
+}
+
+.js .ativo {
+  display: block;
+  animation: show-down .5s forwards;
+}
+
+.js .ativo.show-right {
+  display: block;
+  animation: show-right .5s forwards;
+}
+
+
+@keyframes show-right {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes show-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.js [data-anime="scroll"] {
+  opacity: 0;
+  transform: translate3d(0px, 0, 0);
+}
+
+.js [data-anime="scroll"].animation {
+  opacity: 1;
+  transform: matrix3d();
+  transition: .3s;
+}
+
+.btc-preco {
+  background-color: #3f4;
+  padding: .2rem .4rem;
+  font-weight: bold;
+  border-radius: 4px;
+}

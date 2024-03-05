@@ -1,0 +1,50 @@
+.contato-bg {
+  display: grid;
+  grid-template-columns: 90px 300px 1fr;
+  grid-template-rows: 1fr;
+  grid-column: 2/4;
+  margin-bottom: 3rem;
+  gap: 10px;
+}
+
+.contato-bg .mapa {
+  grid-column: 2/3;
+}
+
+.contato-bg .mapa img {
+  width: 100%;
+}
+
+.dados li {
+  font-family: Helvetica, sans-serif;
+  padding: 10px 0;
+}
+
+.dados li::before {
+  content: '';
+  padding: 5px 10px;
+  margin: 0 10px 0 0;
+  background-color: #FB5;
+  display: inline-block;
+}
+
+@media (max-width: 700px) {
+
+  .contato-bg {
+    display: block;
+    grid-column: 1;
+    width: 100vw;
+  }
+
+  .titulo {
+    font-size: 3rem;
+  }
+
+  .dados li {
+    font-size: 1rem;
+  }
+
+  .contato-bg .mapa {
+    grid-column: 1/4;
+  }
+}
