@@ -21,8 +21,9 @@ export default class Accordion {
       if (this.accordionList.length) {
         // ativar primeiro item
         this.toggleAccordion(this.accordionList[0])
-         this.addAccordionEvent();
-    } 
+        this.addAccordionEvent();
+        }
+    return this
   }
   
 }
