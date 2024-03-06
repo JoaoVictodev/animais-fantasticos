@@ -13,7 +13,7 @@ import initFetchBTC from "./modules/fetch-bitcoin.js";
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init()
-initAnimationScroll();
+
 initAccordion();
 initTabNav();
 initModal();
@@ -24,3 +24,4 @@ initAnimaNumeros();
 initFuncionamento();
 InitFetchAnimais();
 initFetchBTC();
+initAnimationScroll();
