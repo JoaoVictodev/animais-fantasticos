@@ -5,11 +5,10 @@ import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
 import initDropDown from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
-// import AnimaNumeros from "./modules/animanumeros.js";
 import initFuncionamento from "./modules/funcionamento.js";
-import InitFetchAnimais from "./modules/fetch-animais.js";
 import initFetchBTC from "./modules/fetch-bitcoin.js";
 import initAnimationScroll from "./modules/scroll-animacao.js";
+import fetchAnimais from "./modules/fetch-animais.js";
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init()
@@ -28,11 +27,7 @@ tooltip.init();
 
 initDropDown();
 initMenuMobile();
-
-// const animaNumeros = new AnimaNumeros();
-// animaNumeros.init()
-
 initFuncionamento();
-InitFetchAnimais();
+fetchAnimais('../html/animaisapi.json', '.numeros-grid')
 initFetchBTC();
 initAnimationScroll();
