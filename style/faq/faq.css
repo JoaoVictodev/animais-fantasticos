@@ -28,12 +28,12 @@
   margin-right: 10px;
 }
 
-.js [data-anime="accordion"] dt::after {
+.js [data-anima="accordion"] dt::after {
   content: '⬎';
   margin-left: 10px;
 }
 
-.js[data-anime="accordion"] dt.on::after {
+.js[data-anima="accordion"] dt.on::after {
   content: '⬏';
 }
 

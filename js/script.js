@@ -13,7 +13,7 @@ import fetchAnimais from "./modules/fetch-animais.js";
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init()
 
-const accordion = new Accordion('[data-anime="accordion"] dt');
+const accordion = new Accordion('[data-anima="accordion"] dt');
 accordion.init()
 
 const tabnav = new Tabnav('[data-tab="menu"] li', '[data-tab="content"]');
@@ -27,6 +27,7 @@ tooltip.init();
 
 const scrollanima = new ScrollAnima('[data-anime="scroll"]');
 scrollanima.init()
+
 initDropDown();
 initMenuMobile();
 initFuncionamento();
