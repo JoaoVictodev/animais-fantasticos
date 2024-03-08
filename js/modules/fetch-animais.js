@@ -12,7 +12,6 @@ export default function fetchAnimais(url, target) {
   }
 
   // preenche animais no dom
-
   const numerosContainer = document.querySelector(target);
   function preencherAnimais(animal){
     const divAnimal = createAnimais(animal);
