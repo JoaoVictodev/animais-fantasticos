@@ -5,9 +5,9 @@ export default class iModal{
    this.containerModal = document.querySelector(containerModal);
 
 
-   //Bind this ao callBack para 
-   //fazer referencia ao objeto
-   //da classe
+   // Bind this ao callBack para 
+   // fazer referencia ao objeto
+   // da classe
    this.eventTogglrModal = this.eventTogglrModal.bind(this)
    this.clickForaModal = this.clickForaModal.bind(this)
   }
@@ -17,7 +17,7 @@ export default class iModal{
     this.containerModal.classList.toggle('anime')
   }
 
-  //Adiciona o evento de toggle ao modal
+  // Adiciona o evento de toggle ao modal
   eventTogglrModal(event){
     event.preventDefault();
     this.toggleModal();
