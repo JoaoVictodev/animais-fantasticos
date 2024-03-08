@@ -1,4 +1,4 @@
-import outsideClick from "./outsideclick.js"; 
+import outsideClick from "./debaunce.js"; 
 
  function handleClick(event) {
     event.preventDefault();
