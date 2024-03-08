@@ -22,7 +22,6 @@ export default class DropDown {
     outisideClick(element, this.events, () => {
       element.classList.remove('active');
     });
-    console.log(124)
   };
 
   // adiciona os eventos ap dropdown menu
@@ -38,7 +37,6 @@ export default class DropDown {
     if(this.dropdonwMenus.length){
       this.addDropdownMenusEvent();
     }
-    console.log(this.dropdonwMenus)
     return this;
   };
   
