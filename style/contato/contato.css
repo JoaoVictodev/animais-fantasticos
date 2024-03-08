@@ -32,7 +32,8 @@
 @media (max-width: 700px) {
 
   .contato-bg {
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
     grid-column: 1;
     width: 100vw;
   }
