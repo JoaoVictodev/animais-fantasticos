@@ -3,7 +3,7 @@ import Accordion from "./modules/accordion.js";
 import Tabnav from "./modules/tabnav.js";
 import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
-import initDropDown from "./modules/dropdown-menu.js";
+import DropDown from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initFuncionamento from "./modules/funcionamento.js";
 import fetchBTC from "./modules/fetch-bitcoin.js";
@@ -28,7 +28,9 @@ tooltip.init();
 const scrollanima = new ScrollAnima('[data-anime="scroll"]');
 scrollanima.init()
 
-initDropDown();
+const dropDownMenu = new DropDown('[data-dropdown]');
+dropDownMenu.init()
+
 initMenuMobile();
 initFuncionamento();
 fetchAnimais('../html/animaisapi.json', '.numeros-grid')
