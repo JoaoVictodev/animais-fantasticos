@@ -16,8 +16,7 @@
 
   .rodape {
     grid-column: 1;
-    grid-row: 6;
-    grid-row: 6;
+    grid-row: 7;
     width: 100vw;
     margin: 0;
   }
