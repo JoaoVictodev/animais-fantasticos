@@ -29,12 +29,19 @@
 }
 
 .js [data-anima="accordion"] dt::after {
-  content: '⬎';
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: url('../img/arrow-red.svg') no-repeat center center;
   margin-left: 10px;
+  transform: rotate(90deg);
+  transition: transform .3s;
 }
 
-.js[data-anima="accordion"] dt.on::after {
-  content: '⬏';
+.js [data-anima="accordion"] dt.on::after {
+  content: '';
+  transform: rotate(-90deg);
 }
 
 
